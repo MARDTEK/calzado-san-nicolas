@@ -3,6 +3,10 @@
 
 Esta guía te permite publicar en minutos una vitrina web de alta conversión para calzado de cuero en Cali, con **costo $0** en **Google Sites**.
 
+> 🌐 **SITIO WEB PUBLICADO EN VIVO Y ACTIVO:**  
+> 👉 **[https://mardtek.github.io/calzado-san-nicolas/](https://mardtek.github.io/calzado-san-nicolas/)**  
+> *Puedes abrir este enlace en cualquier celular o computador, o incrustarlo directamente en Google Sites mediante "Incorporar por URL".*
+
 Tienes dos métodos disponibles:
 1. **Método 1 (Recomendado - 3 Minutos):** Insertar el código optimizado completo (`embed-google-sites.html`). Obtendrás el diseño profesional con tarjetas de WhatsApp, estilos de cuero de lujo, testimonios tipo chat y botones interactivos.
 2. **Método 2 (Nativo de Google Sites):** Construir los 5 bloques arrastrando los elementos visuales nativos de Google Sites.
