@@ -1,0 +1,790 @@
+<!-- ==============================================================
+     PLANTILLA MAESTRA: VITRINA WEB / CATÁLOGO RÁPIDO PARA GOOGLE SITES
+     Instrucciones:
+     1. En tu Google Sites, ve al panel derecho: "Insertar" -> "Incorporar" (Embed) -> "Código insertado"
+     2. Pega este código completo.
+     3. Para cambiar el número de WhatsApp, busca "573000000000" y cámbialo por tu número con indicativo (Ej: 573151234567).
+     ============================================================== -->
+<div id="vitrina-calzado-san-nicolas">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+
+  <style>
+    #vitrina-calzado-san-nicolas {
+      --primary: #8a3c1b;
+      --primary-dark: #632a12;
+      --secondary: #1f2937;
+      --accent-gold: #c98836;
+      --bg-cream: #faf7f2;
+      --bg-card: #ffffff;
+      --text-main: #1f2937;
+      --text-muted: #57606a;
+      --whatsapp: #25d366;
+      --whatsapp-dark: #128c7e;
+      --border-subtle: #e5ded5;
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg-cream);
+      color: var(--text-main);
+      line-height: 1.55;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    #vitrina-calzado-san-nicolas * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    .gs-top-bar {
+      background: var(--secondary);
+      color: #f3f4f6;
+      font-size: 0.82rem;
+      padding: 0.5rem 1rem;
+      text-align: center;
+      font-weight: 500;
+    }
+    .gs-top-bar strong {
+      color: var(--accent-gold);
+    }
+    .gs-container {
+      width: 100%;
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+    .gs-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.55rem;
+      font-weight: 700;
+      font-size: 0.98rem;
+      padding: 0.85rem 1.6rem;
+      border-radius: 999px;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      cursor: pointer;
+      border: none;
+    }
+    .gs-btn-whatsapp {
+      background-color: var(--whatsapp);
+      color: #ffffff !important;
+      box-shadow: 0 6px 18px rgba(37, 211, 102, 0.35);
+    }
+    .gs-btn-whatsapp:hover {
+      background-color: var(--whatsapp-dark);
+      transform: translateY(-2px);
+    }
+    .gs-btn-sm {
+      padding: 0.65rem 1rem;
+      font-size: 0.88rem;
+      border-radius: 8px;
+      width: 100%;
+    }
+
+    /* BLOQUE 1: HERO */
+    .gs-hero {
+      position: relative;
+      background: linear-gradient(135deg, #2a160d 0%, #462211 50%, #6d3319 100%);
+      color: #ffffff;
+      padding: 4rem 0 3.5rem 0;
+      border-bottom: 4px solid var(--accent-gold);
+    }
+    .gs-hero-content {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 2.5rem;
+      align-items: center;
+    }
+    .gs-badge-origin {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(201, 136, 54, 0.2);
+      border: 1px solid var(--accent-gold);
+      color: #ffd89b;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      padding: 0.35rem 0.9rem;
+      border-radius: 999px;
+      margin-bottom: 1rem;
+    }
+    .gs-hero h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(1.9rem, 4vw, 3rem);
+      line-height: 1.2;
+      font-weight: 700;
+      margin-bottom: 1.1rem;
+      color: #ffffff;
+    }
+    .gs-hero h1 span.gold {
+      color: #ffd89b;
+      font-style: italic;
+    }
+    .gs-hero-subtitle {
+      font-size: clamp(1rem, 1.8vw, 1.15rem);
+      color: #f0e6df;
+      margin-bottom: 1.8rem;
+      line-height: 1.6;
+    }
+    .gs-hero-visual {
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+    .gs-card-frame {
+      position: relative;
+      background: #ffffff;
+      padding: 0.6rem;
+      border-radius: 16px;
+      box-shadow: 0 16px 36px rgba(0,0,0,0.3);
+      max-width: 400px;
+      width: 100%;
+    }
+    .gs-card-frame img {
+      width: 100%;
+      height: 290px;
+      object-fit: cover;
+      border-radius: 12px;
+      display: block;
+    }
+    .gs-float-tag {
+      position: absolute;
+      bottom: -12px;
+      right: 15px;
+      background: var(--primary-dark);
+      color: #ffd89b;
+      border: 2px solid var(--accent-gold);
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+      text-align: center;
+    }
+
+    /* BLOQUE 2: CATÁLOGO */
+    .gs-catalog {
+      padding: 4rem 0;
+      background-color: var(--bg-cream);
+    }
+    .gs-title-wrap {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 2.8rem auto;
+    }
+    .gs-tag {
+      font-size: 0.8rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--primary);
+      margin-bottom: 0.4rem;
+      display: block;
+    }
+    .gs-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(1.8rem, 3.2vw, 2.4rem);
+      color: var(--secondary);
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 0.6rem;
+    }
+    .gs-subtext {
+      color: var(--text-muted);
+      font-size: 0.98rem;
+    }
+    .gs-grid-products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.8rem;
+    }
+    .gs-prod-card {
+      background: var(--bg-card);
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid var(--border-subtle);
+      box-shadow: 0 4px 14px rgba(35, 20, 10, 0.06);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.25s ease;
+    }
+    .gs-prod-card:hover {
+      transform: translateY(-5px);
+    }
+    .gs-img-box {
+      position: relative;
+      width: 100%;
+      height: 240px;
+      background: #eee5db;
+    }
+    .gs-img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .gs-ref-tag {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: rgba(31, 41, 55, 0.9);
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 0.75rem;
+      padding: 0.25rem 0.6rem;
+      border-radius: 6px;
+    }
+    .gs-stock-tag {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #dcfce7;
+      color: #166534;
+      font-weight: 700;
+      font-size: 0.72rem;
+      padding: 0.25rem 0.6rem;
+      border-radius: 6px;
+    }
+    .gs-prod-body {
+      padding: 1.3rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    .gs-prod-name {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--secondary);
+      margin-bottom: 0.8rem;
+    }
+    .gs-specs {
+      list-style: none;
+      margin-bottom: 1.2rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px dashed var(--border-subtle);
+      flex-grow: 1;
+    }
+    .gs-specs li {
+      position: relative;
+      padding-left: 1.25rem;
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      margin-bottom: 0.45rem;
+    }
+    .gs-specs li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--primary);
+      font-weight: 800;
+    }
+    .gs-price-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 0.8rem;
+    }
+    .gs-price-lbl {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: #6b7280;
+      text-transform: uppercase;
+    }
+    .gs-price-val {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--primary-dark);
+    }
+
+    /* BLOQUE 3: GARANTÍAS */
+    .gs-trust {
+      padding: 3.8rem 0;
+      background: #ffffff;
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .gs-trust-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.8rem;
+    }
+    .gs-trust-box {
+      background: var(--bg-cream);
+      padding: 1.8rem 1.4rem;
+      border-radius: 12px;
+      text-align: center;
+      border: 1px solid #eee5da;
+    }
+    .gs-trust-icon {
+      font-size: 2.2rem;
+      margin-bottom: 0.8rem;
+      display: block;
+    }
+    .gs-trust-box h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--secondary);
+      margin-bottom: 0.5rem;
+    }
+    .gs-trust-box p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+
+    /* BLOQUE 4: TESTIMONIOS WHATSAPP */
+    .gs-proof {
+      padding: 4rem 0;
+      background: #fbf8f4;
+    }
+    .gs-proof-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.8rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .gs-chat-card {
+      background: #efeae2;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid #ddd5c9;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .gs-chat-head {
+      background: #075e54;
+      color: white;
+      padding: 0.7rem 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+    }
+    .gs-avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #25d366;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+    .gs-chat-user {
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+    .gs-chat-badge {
+      font-size: 0.7rem;
+      opacity: 0.85;
+    }
+    .gs-chat-body {
+      padding: 1.2rem 1rem;
+    }
+    .gs-bubble {
+      background: white;
+      padding: 0.85rem 1rem;
+      border-radius: 0 10px 10px 10px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .gs-bubble p {
+      font-size: 0.92rem;
+      color: #111827;
+      font-style: italic;
+      margin-bottom: 0.35rem;
+    }
+    .gs-chat-meta {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 0.3rem;
+      font-size: 0.68rem;
+      color: #6b7280;
+    }
+
+    /* BLOQUE 5: FOOTER Y CONTACTO */
+    .gs-footer {
+      background: var(--secondary);
+      color: #d1d5db;
+      padding: 3.5rem 0 2rem 0;
+      border-top: 4px solid var(--primary);
+    }
+    .gs-footer-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+    .gs-fcol h3 {
+      color: #ffffff;
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      position: relative;
+      padding-bottom: 0.4rem;
+    }
+    .gs-fcol h3::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 28px;
+      height: 2px;
+      background: var(--accent-gold);
+    }
+    .gs-fcol p {
+      font-size: 0.9rem;
+      line-height: 1.55;
+      margin-bottom: 0.75rem;
+    }
+    .gs-socials {
+      display: flex;
+      gap: 0.6rem;
+      margin-top: 1rem;
+    }
+    .gs-soc-link {
+      background: rgba(255,255,255,0.1);
+      color: white;
+      text-decoration: none;
+      padding: 0.45rem 0.9rem;
+      border-radius: 6px;
+      font-size: 0.82rem;
+      font-weight: 600;
+    }
+    .gs-soc-link:hover {
+      background: var(--primary);
+    }
+    .gs-fbottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 1.5rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 850px) {
+      .gs-hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .gs-hero-visual {
+        order: -1;
+      }
+      .gs-trust-grid, .gs-proof-grid, .gs-footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <!-- BARRA DE INFORMACIÓN SUPERIOR -->
+  <div class="gs-top-bar">
+    👞 <strong>Taller en San Nicolás, Cali:</strong> Envíos contra entrega a toda Cali y el Valle del Cauca | 100% Cuero Vacuno Garantizado
+  </div>
+
+  <!-- ==============================================================
+       BLOQUE 1: CABECERA Y PROPUESTA DE VALOR
+       ============================================================== -->
+  <header class="gs-hero">
+    <div class="gs-container gs-hero-content">
+      <div>
+        <div class="gs-badge-origin">⭐ Calidad Tradicional Caleña</div>
+        <h1>
+          Botas y calzado en <span class="gold">cuero genuino</span>, diseñados en Cali para durar y brindar confort todo el día.
+        </h1>
+        <p class="gs-hero-subtitle">
+          Fabricación directa de taller en San Nicolás. Envíos contra entrega a toda Cali y el Valle del Cauca.
+        </p>
+        <a href="https://wa.me/573000000000?text=Hola,%20vi%20su%20página%20web%20y%20quiero%20conocer%20los%20modelos%20disponibles" 
+           target="_blank" 
+           class="gs-btn gs-btn-whatsapp">
+          Ver Catálogo y Precios por WhatsApp
+        </a>
+      </div>
+
+      <div class="gs-hero-visual">
+        <div class="gs-card-frame">
+          <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=700&q=80" alt="Botas en cuero genuino">
+          <div class="gs-float-tag">
+            👞 Taller Artesanal<br><strong>San Nicolás - Cali</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==============================================================
+       BLOQUE 2: VITRINA DE PRODUCTOS ESTRELLA (MÁXIMO 6 REFERENCIAS)
+       ============================================================== -->
+  <section class="gs-catalog">
+    <div class="gs-container">
+      <div class="gs-title-wrap">
+        <span class="gs-tag">Colección de Taller</span>
+        <h2 class="gs-title">Vitrina de Productos Estrella</h2>
+        <p class="gs-subtext">Nuestras 6 referencias más solicitadas con cuero garantizado y pago contra entrega.</p>
+      </div>
+
+      <div class="gs-grid-products">
+
+        <!-- REFERENCIA 1 -->
+        <div class="gs-prod-card">
+          <div class="gs-img-box">
+            <span class="gs-ref-tag">REF. 204</span>
+            <span class="gs-stock-tag">● Disponible</span>
+            <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=600&q=80" alt="Botín Urbano Cuero Miel – Ref. 204">
+          </div>
+          <div class="gs-prod-body">
+            <h3 class="gs-prod-name">Botín Urbano Cuero Miel – Ref. 204</h3>
+            <ul class="gs-specs">
+              <li>Cuero vacuno 100% garantizado (sin sintéticos).</li>
+              <li>Suela de caucho vulcanizado antideslizante.</li>
+              <li>Plantilla ergonómica de alto confort.</li>
+            </ul>
+            <div class="gs-price-row">
+              <span class="gs-price-lbl">Precio</span>
+              <span class="gs-price-val">$160.000 COP</span>
+            </div>
+            <a href="https://wa.me/573000000000?text=Hola,%20me%20interesa%20la%20Ref.%20204%20talla%20[indicar]" target="_blank" class="gs-btn gs-btn-whatsapp gs-btn-sm">
+              Pedir este modelo por WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- REFERENCIA 2 -->
+        <div class="gs-prod-card">
+          <div class="gs-img-box">
+            <span class="gs-ref-tag">REF. 305</span>
+            <span class="gs-stock-tag">● Disponible</span>
+            <img src="https://images.unsplash.com/photo-1608256246200-53e635b5b65f?auto=format&fit=crop&w=600&q=80" alt="Bota Clásica Taller Café – Ref. 305">
+          </div>
+          <div class="gs-prod-body">
+            <h3 class="gs-prod-name">Bota Clásica Taller Café – Ref. 305</h3>
+            <ul class="gs-specs">
+              <li>Cuero graso calibre grueso resistente al agua y polvo.</li>
+              <li>Costura reforzada y vira artesanal de alta durabilidad.</li>
+              <li>Forro interno antitranspirante y cuello acolchado.</li>
+            </ul>
+            <div class="gs-price-row">
+              <span class="gs-price-lbl">Precio</span>
+              <span class="gs-price-val">$175.000 COP</span>
+            </div>
+            <a href="https://wa.me/573000000000?text=Hola,%20me%20interesa%20la%20Ref.%20305%20talla%20[indicar]" target="_blank" class="gs-btn gs-btn-whatsapp gs-btn-sm">
+              Pedir este modelo por WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- REFERENCIA 3 -->
+        <div class="gs-prod-card">
+          <div class="gs-img-box">
+            <span class="gs-ref-tag">REF. 108</span>
+            <span class="gs-stock-tag">● Disponible</span>
+            <img src="https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=600&q=80" alt="Mocasín Ejecutivo Cuero Negro – Ref. 108">
+          </div>
+          <div class="gs-prod-body">
+            <h3 class="gs-prod-name">Mocasín Ejecutivo Negro – Ref. 108</h3>
+            <ul class="gs-specs">
+              <li>Cuero flor suave de brillo natural fácil de lustrar.</li>
+              <li>Suela liviana flexible para largas caminatas en la oficina.</li>
+              <li>Construcción tubular sin costuras molestas en el empeine.</li>
+            </ul>
+            <div class="gs-price-row">
+              <span class="gs-price-lbl">Precio</span>
+              <span class="gs-price-val">$145.000 COP</span>
+            </div>
+            <a href="https://wa.me/573000000000?text=Hola,%20me%20interesa%20la%20Ref.%20108%20talla%20[indicar]" target="_blank" class="gs-btn gs-btn-whatsapp gs-btn-sm">
+              Pedir este modelo por WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- REFERENCIA 4 -->
+        <div class="gs-prod-card">
+          <div class="gs-img-box">
+            <span class="gs-ref-tag">REF. 412</span>
+            <span class="gs-stock-tag">● Disponible</span>
+            <img src="https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=600&q=80" alt="Zapato Oxford Casual Caramelo – Ref. 412">
+          </div>
+          <div class="gs-prod-body">
+            <h3 class="gs-prod-name">Oxford Casual Caramelo – Ref. 412</h3>
+            <ul class="gs-specs">
+              <li>Cuero curtido vegetal tono caramelo envejecido.</li>
+              <li>Suela de caucho con huella antideslizante todoterreno.</li>
+              <li>Puntera reforzada con diseño picado artesanal sutil.</li>
+            </ul>
+            <div class="gs-price-row">
+              <span class="gs-price-lbl">Precio</span>
+              <span class="gs-price-val">$155.000 COP</span>
+            </div>
+            <a href="https://wa.me/573000000000?text=Hola,%20me%20interesa%20la%20Ref.%20412%20talla%20[indicar]" target="_blank" class="gs-btn gs-btn-whatsapp gs-btn-sm">
+              Pedir este modelo por WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- REFERENCIA 5 -->
+        <div class="gs-prod-card">
+          <div class="gs-img-box">
+            <span class="gs-ref-tag">REF. 520</span>
+            <span class="gs-stock-tag">● Disponible</span>
+            <img src="https://images.unsplash.com/photo-1520639888713-7851133b1ed0?auto=format&fit=crop&w=600&q=80" alt="Bota Rústica Cuero Nobuk Mostaza – Ref. 520">
+          </div>
+          <div class="gs-prod-body">
+            <h3 class="gs-prod-name">Bota Rústica Nobuk – Ref. 520</h3>
+            <ul class="gs-specs">
+              <li>Cuero nobuk genuino de acabado suave y resistente.</li>
+              <li>Suela tractorada de alto agarre para jornadas exigentes.</li>
+              <li>Ojaletes metálicos antioxidantes y cordones encerados.</li>
+            </ul>
+            <div class="gs-price-row">
+              <span class="gs-price-lbl">Precio</span>
+              <span class="gs-price-val">$180.000 COP</span>
+            </div>
+            <a href="https://wa.me/573000000000?text=Hola,%20me%20interesa%20la%20Ref.%20520%20talla%20[indicar]" target="_blank" class="gs-btn gs-btn-whatsapp gs-btn-sm">
+              Pedir este modelo por WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- REFERENCIA 6 -->
+        <div class="gs-prod-card">
+          <div class="gs-img-box">
+            <span class="gs-ref-tag">REF. 615</span>
+            <span class="gs-stock-tag">● Disponible</span>
+            <img src="https://images.unsplash.com/photo-1560343090-f0409e92791a?auto=format&fit=crop&w=600&q=80" alt="Confort Driver Náutico Cuero Tabaco – Ref. 615">
+          </div>
+          <div class="gs-prod-body">
+            <h3 class="gs-prod-name">Driver Náutico Cuero Tabaco – Ref. 615</h3>
+            <ul class="gs-specs">
+              <li>Cuero suave tipo guante transpirable para clima cálido.</li>
+              <li>Suela partida ergonómica tipo conductor antifatiga.</li>
+              <li>Plantilla con soporte de arco anatómico y absorción de impacto.</li>
+            </ul>
+            <div class="gs-price-row">
+              <span class="gs-price-lbl">Precio</span>
+              <span class="gs-price-val">$140.000 COP</span>
+            </div>
+            <a href="https://wa.me/573000000000?text=Hola,%20me%20interesa%20la%20Ref.%20615%20talla%20[indicar]" target="_blank" class="gs-btn gs-btn-whatsapp gs-btn-sm">
+              Pedir este modelo por WhatsApp
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================================
+       BLOQUE 3: GARANTÍA Y CONFIANZA LOCAL
+       ============================================================== -->
+  <section class="gs-trust">
+    <div class="gs-container">
+      <div class="gs-title-wrap" style="margin-bottom: 2rem;">
+        <span class="gs-tag">Compromiso Vallecaucano</span>
+        <h2 class="gs-title">Compre con Total Tranquilidad</h2>
+      </div>
+
+      <div class="gs-trust-grid">
+        <div class="gs-trust-box">
+          <span class="gs-trust-icon">🛡️</span>
+          <h3>Garantía Directa</h3>
+          <p>"Garantía de 90 días por costura y despegue de suela directa de fábrica."</p>
+        </div>
+        <div class="gs-trust-box">
+          <span class="gs-trust-icon">💵</span>
+          <h3>Paga en Casa</h3>
+          <p>"Servicio de pago contra entrega en Cali y municipios cercanos."</p>
+        </div>
+        <div class="gs-trust-box">
+          <span class="gs-trust-icon">🔄</span>
+          <h3>Cambio de Talla Ágil</h3>
+          <p>"Si no te queda perfecto, cambiamos la talla en menos de 48 horas."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================================
+       BLOQUE 4: PRUEBA SOCIAL (TESTIMONIOS REALES)
+       ============================================================== -->
+  <section class="gs-proof">
+    <div class="gs-container">
+      <div class="gs-title-wrap">
+        <span class="gs-tag">Testimonios Reales</span>
+        <h2 class="gs-title">Lo que Dicen Nuestros Clientes</h2>
+      </div>
+
+      <div class="gs-proof-grid">
+        <div class="gs-chat-card">
+          <div class="gs-chat-head">
+            <div class="gs-avatar">CM</div>
+            <div>
+              <div class="gs-chat-user">Carlos M. (Palmira)</div>
+              <div class="gs-chat-badge">Calzado Ref. 204</div>
+            </div>
+          </div>
+          <div class="gs-chat-body">
+            <div class="gs-bubble">
+              <p>"Me llegaron las botas a Palmira, la calidad del cuero superó mis expectativas. Muy recomendados."</p>
+              <div class="gs-chat-meta">Ayer, 4:18 p.m. ✓✓</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gs-chat-card">
+          <div class="gs-chat-head">
+            <div class="gs-avatar">AG</div>
+            <div>
+              <div class="gs-chat-user">Andrés G. (Cali - Centro)</div>
+              <div class="gs-chat-badge">Mocasines Ref. 108</div>
+            </div>
+          </div>
+          <div class="gs-chat-body">
+            <div class="gs-bubble">
+              <p>"Compré los mocasines para el trabajo en el centro de Cali; cómodos desde el primer día."</p>
+              <div class="gs-chat-meta">Martes, 11:42 a.m. ✓✓</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================================
+       BLOQUE 5: PIE DE PÁGINA Y CONTACTO FÍSICO
+       ============================================================== -->
+  <footer class="gs-footer">
+    <div class="gs-container">
+      <div class="gs-footer-grid">
+        <div class="gs-fcol">
+          <h3>Taller Tradicional</h3>
+          <p>Fabricantes de calzado en cuero 100% colombiano con tradición artesanal en el Valle del Cauca.</p>
+          <p><strong>📍 Ubicación:</strong><br>Carrera 8 con Calle 16, Barrio San Nicolás, Cali.</p>
+        </div>
+        <div class="gs-fcol">
+          <h3>Horario de Atención</h3>
+          <p><strong>Lunes a Sábado:</strong><br>8:00 a.m. a 6:00 p.m.</p>
+          <p><strong>Despachos:</strong><br>Cali y todo el Valle del Cauca.</p>
+        </div>
+        <div class="gs-fcol">
+          <h3>Redes y Canales</h3>
+          <p>Escríbenos o síguenos en nuestras plataformas oficiales:</p>
+          <div class="gs-socials">
+            <a href="https://wa.me/573000000000" target="_blank" class="gs-soc-link">WhatsApp</a>
+            <a href="https://instagram.com" target="_blank" class="gs-soc-link">Instagram</a>
+            <a href="https://facebook.com" target="_blank" class="gs-soc-link">Facebook</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="gs-fbottom">
+        <p>© 2026 Calzado Artesanal San Nicolás - Cali. Fabricación 100% Cuero Colombiano.</p>
+      </div>
+    </div>
+  </footer>
+</div>
